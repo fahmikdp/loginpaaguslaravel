@@ -1,23 +1,27 @@
-<a href="gudang/tambah"><button>Tambah Lokasi</button></a>
-<p>
-<table border="1" cellspacing="0" cellpadding="10px">
-    <tr>
-        <th>
-            NO
-        </th>
-        <th>
-            Lokasi Gudang
-        </th>
-        <th>
-            Penanggung Jawab
-        </th>
-        <th>
-            Keterangan
-        </th>
-        <th>
-            AKSI
-        </th>
-    </tr>
+@extends('layout')
+@section('content')
+
+<div class="mt-3">
+    <a href="gudang/tambah"><button class="btn btn-primary">Tambah Lokasi</button></a>
+    <p>
+        <table class="table table-striped">
+            <tr class="table-warning">
+                <th>
+                    NO
+                </th>
+                <th>
+                    Lokasi Gudang
+                </th>
+                <th>
+                    Penanggung Jawab
+                </th>
+                <th>
+                    Keterangan
+                </th>
+                <th>
+                    AKSI
+                </th>
+            </tr>
     <?php 
         $no = 1;
     ?>
@@ -43,3 +47,5 @@
     </tr>
     @endforeach
 </table>
+</div>
+@endsection
